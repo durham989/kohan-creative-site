@@ -1,0 +1,264 @@
+<div id="header-unit"></div>
+<kohan-navbar></kohan-navbar>
+
+<section class="full-individual-section">
+
+  <!-- Contact Us Modal -->
+  <ngx-smart-modal #contactUsModal identifier="contactUsModal" customClass="nsm-dialog-animation-btt">
+    <kohan-contact-us></kohan-contact-us>
+  </ngx-smart-modal>
+
+  <div id="video-container">
+    <video #packagesVideo autoplay="" loop="true" muted="true" playsinline="true" class="fillWidth" style="object-fit: cover;" src="https://firebasestorage.googleapis.com/v0/b/kohan-creative.appspot.com/o/Hong%20Kong%20-%202885.mp4?alt=media&token=e2cbd9a2-b156-44b4-8003-61623902e8d0">
+      <!-- <source src="https://firebasestorage.googleapis.com/v0/b/kohan-creative.appspot.com/o/Hong%20Kong%20-%202885.mp4?alt=media&token=e2cbd9a2-b156-44b4-8003-61623902e8d0"
+        type="video/mp4" /> -->
+    </video>
+  </div>
+  <!-- end video-container -->
+
+
+  <!-- Work With Us Modal -->
+  <ngx-smart-modal #myModal identifier="myModal" customClass="nsm-dialog-animation-btt">
+    <kohan-work-with-us></kohan-work-with-us>
+  </ngx-smart-modal>
+
+  <div class="outer">
+    <div class="middle">
+      <div class="inner">
+        <!-- <p class="desc-smaller-text text-align-center">Kohan Creative</p> -->
+        <h1 class="kohan-header-tagline text-align-center">Design & Creative Packages</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-down-header-arrow-container scroll-down-arrow-center hide-on-mobile">
+    <div class="text-align-center">
+      <div class="scroll-down-animation" (click)="scrollToPageSection('packages')">
+        <fa name="chevron-down" size="2x" class="scroll-down-animation" (click)="scrollToPageSection('packages')"></fa>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<div class="app-background">
+
+  <!-- iPhone Packages -->
+  <section id="packages">
+    <div class="d-flex align-items-center justify-content-center text-align-center" style="width: 100%;">
+      <div class="desktop-iphone-display">
+        <div class="iphone-red-package">
+          <div class="iphone-top">
+            <span class="camera"></span>
+            <span class="sensor"></span>
+            <span class="speaker"></span>
+          </div>
+          <div class="top-bar"></div>
+          <div class="iphone-screen">
+            <ul class="list-unstyled text-align-left iphone-padding mb-0">
+              <h4 class="mb-2 font-weight-normal text-align-center service-offerings-title red-package">Red</h4>
+              <h4 class="mt-2 font-weight-normal text-align-left package-subheader">Web Design</h4>
+              <li class="package-features-paragraph">Standard monthly web hosting</li>
+              <li class="package-features-paragraph">Mobile optimized site</li>
+              <li class="package-features-paragraph">Pre-designed template with up to 30 pages</li>
+              <li class="package-features-paragraph">Up to two hours of site updates per month</li>
+              <li class="package-features-paragraph">SEO enhancement on up to two pages per month</li>
+              <li class="package-features-paragraph">Updated logo with full rights</li>
+            </ul>
+            <ul class="list-unstyled text-align-left iphone-padding mb-0">
+              <h4 class="my-0 font-weight-normal text-align-left package-subheader">Social Media</h4>
+              <li class="package-features-paragraph">Setup of two social media accounts</li>
+              <li class="package-features-paragraph">Two posts per month for your two selected accounts</li>
+            </ul>
+            <button type="button" class="sign-up-button mt-2" (click)="openContactUsModal()">Contact Us</button>
+          </div>
+          <div class="buttons">
+            <span class="on-off"></span>
+            <span class="sleep"></span>
+            <span class="up"></span>
+            <span class="down"></span>
+          </div>
+          <div class="bottom-bar"></div>
+          <div class="iphone-bottom">
+            <span></span>
+          </div>
+        </div>
+
+        <div class="iphone-black-package">
+          <div class="iphone-top">
+            <span class="camera"></span>
+            <span class="sensor"></span>
+            <span class="speaker"></span>
+          </div>
+          <div class="top-bar"></div>
+          <div class="iphone-screen">
+            <ul class="list-unstyled text-align-left iphone-padding mb-0">
+              <h4 class="mb-2 font-weight-normal text-align-center service-offerings-title">Black</h4>
+              <h4 class="mt-2 font-weight-normal text-align-left package-subheader">Web Design</h4>
+              <li class="package-features-paragraph">Standard monthly web hosting</li>
+              <li class="package-features-paragraph">Mobile optimized site</li>
+              <li class="package-features-paragraph">Complete custom website design and development with up to 60 pages</li>
+              <li class="package-features-paragraph">Up to five hours of site updates per month</li>
+              <li class="package-features-paragraph">SEO enhancement on up to five pages per month</li>
+              <li class="package-features-paragraph">Premium services and integrations</li>
+              <li class="package-features-paragraph">Custom logo and suite of brand assets</li>
+            </ul>
+            <ul class="list-unstyled text-align-left iphone-padding mb-0">
+              <h4 class="my-0 font-weight-normal text-align-left package-subheader">Social Media</h4>
+              <li class="package-features-paragraph">Setup of four social media accounts</li>
+              <li class="package-features-paragraph">One post per week for each of your four social media accounts</li>
+            </ul>
+            <button type="button" class="sign-up-button mt-2" (click)="openContactUsModal()">Contact Us</button>
+          </div>
+          <div class="buttons">
+            <span class="on-off"></span>
+            <span class="sleep"></span>
+            <span class="up"></span>
+            <span class="down"></span>
+          </div>
+          <div class="bottom-bar"></div>
+          <div class="iphone-bottom">
+            <span></span>
+          </div>
+        </div>
+
+
+        <div class="iphone-gold-package">
+          <div class="iphone-top">
+            <span class="camera"></span>
+            <span class="sensor"></span>
+            <span class="speaker"></span>
+          </div>
+          <div class="top-bar"></div>
+          <div class="iphone-screen">
+            <ul class="list-unstyled text-align-left iphone-padding mb-0">
+              <h4 class="mb-2 font-weight-normal text-align-center service-offerings-title gold-package">Gold</h4>
+              <h4 class="mt-2 font-weight-normal text-align-left package-subheader">Web Design</h4>
+              <li class="package-features-paragraph">Standard monthly web hosting</li>
+              <li class="package-features-paragraph">Mobile optimized site</li>
+              <li class="package-features-paragraph">Pre-designed template with up to 40 pages</li>
+              <li class="package-features-paragraph">Up to two hours of site updates per month</li>
+              <li class="package-features-paragraph">SEO enhancement on up to three pages per month</li>
+              <li class="package-features-paragraph">Newly designed logo and business cards</li>
+            </ul>
+            <ul class="list-unstyled text-align-left iphone-padding mb-0">
+              <h4 class="my-0 font-weight-normal text-align-left package-subheader">Social Media</h4>
+              <li class="package-features-paragraph">Setup of three social media accounts</li>
+              <li class="package-features-paragraph">Three posts per month for your three selected accounts</li>
+            </ul>
+            <button type="button" class="sign-up-button mt-2" (click)="openContactUsModal()">Contact Us</button>
+          </div>
+          <div class="buttons">
+            <span class="on-off"></span>
+            <span class="sleep"></span>
+            <span class="up"></span>
+            <span class="down"></span>
+          </div>
+          <div class="bottom-bar"></div>
+          <div class="iphone-bottom">
+            <span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile responsive iPhone Packages -->
+      <div class="responsive-iphone-container">
+
+        <div class="marvel-device iphone8 silver individual-iphone-margins">
+          <div class="top-bar"></div>
+          <div class="sleep"></div>
+          <div class="volume"></div>
+          <div class="camera"></div>
+          <div class="sensor"></div>
+          <div class="speaker"></div>
+          <div class="screen">
+            <ul class="list-unstyled text-align-left iphone-padding mb-0">
+              <h4 class="mb-2 font-weight-normal text-align-center service-offerings-title red-package">Red</h4>
+              <h4 class="mt-2 font-weight-normal text-align-left package-subheader">Web Design</h4>
+              <li class="package-features-paragraph">Standard monthly web hosting</li>
+              <li class="package-features-paragraph">Mobile optimized site</li>
+              <li class="package-features-paragraph">Pre-designed template with up to 30 pages</li>
+              <li class="package-features-paragraph">Up to two hours of site updates per month</li>
+              <li class="package-features-paragraph">SEO enhancement on up to two pages per month</li>
+              <li class="package-features-paragraph">Updated logo with full rights</li>
+            </ul>
+            <ul class="list-unstyled text-align-left iphone-padding mb-0">
+              <h4 class="my-0 font-weight-normal text-align-left package-subheader">Social Media</h4>
+              <li class="package-features-paragraph">Setup of two social media accounts</li>
+              <li class="package-features-paragraph">Two posts per month for your two selected accounts</li>
+            </ul>
+            <button type="button" class="sign-up-button mt-2" (click)="openContactUsModal()">Contact Us</button>
+          </div>
+          <div class="home"></div>
+          <div class="bottom-bar"></div>
+        </div>
+
+        <div class="marvel-device iphone8 silver individual-iphone-margins">
+          <div class="top-bar"></div>
+          <div class="sleep"></div>
+          <div class="volume"></div>
+          <div class="camera"></div>
+          <div class="sensor"></div>
+          <div class="speaker"></div>
+          <div class="screen">
+            <ul class="list-unstyled text-align-left iphone-padding mb-0">
+              <h4 class="mb-2 font-weight-normal text-align-center service-offerings-title gold-package">Gold</h4>
+              <h4 class="mt-2 font-weight-normal text-align-left package-subheader">Web Design</h4>
+              <li class="package-features-paragraph">Standard monthly web hosting</li>
+              <li class="package-features-paragraph">Mobile optimized site</li>
+              <li class="package-features-paragraph">Pre-designed template with up to 40 pages</li>
+              <li class="package-features-paragraph">Up to two hours of site updates per month</li>
+              <li class="package-features-paragraph">SEO enhancement on up to three pages per month</li>
+              <li class="package-features-paragraph">Newly designed logo and business cards</li>
+            </ul>
+            <ul class="list-unstyled text-align-left iphone-padding mb-0">
+              <h4 class="my-0 font-weight-normal text-align-left package-subheader">Social Media</h4>
+              <li class="package-features-paragraph">Setup of three social media accounts</li>
+              <li class="package-features-paragraph">Three posts per month for your three selected accounts</li>
+            </ul>
+            <button type="button" class="sign-up-button mt-2" (click)="openContactUsModal()">Contact Us</button>
+          </div>
+          <div class="home"></div>
+          <div class="bottom-bar"></div>
+        </div>
+
+
+        <div class="marvel-device iphone8 silver individual-iphone-margins">
+          <div class="top-bar"></div>
+          <div class="sleep"></div>
+          <div class="volume"></div>
+          <div class="camera"></div>
+          <div class="sensor"></div>
+          <div class="speaker"></div>
+          <div class="screen">
+            <ul class="list-unstyled text-align-left iphone-padding mb-0">
+              <h4 class="mb-2 font-weight-normal text-align-center service-offerings-title">Black</h4>
+              <h4 class="mt-2 font-weight-normal text-align-left package-subheader">Web Design</h4>
+              <li class="package-features-paragraph">Standard monthly web hosting</li>
+              <li class="package-features-paragraph">Mobile optimized site</li>
+              <li class="package-features-paragraph">Complete custom website design and development with up to 60 pages</li>
+              <li class="package-features-paragraph">Up to five hours of site updates per month</li>
+              <li class="package-features-paragraph">SEO enhancement on up to five pages per month</li>
+              <li class="package-features-paragraph">Premium services and integrations</li>
+              <li class="package-features-paragraph">Custom logo and suite of brand assets</li>
+            </ul>
+            <ul class="list-unstyled text-align-left iphone-padding mb-0">
+              <h4 class="my-0 font-weight-normal text-align-left package-subheader">Social Media</h4>
+              <li class="package-features-paragraph">Setup of four social media accounts</li>
+              <li class="package-features-paragraph">One post per week for each of your four social media accounts</li>
+            </ul>
+            <button type="button" class="sign-up-button mt-2" (click)="openContactUsModal()">Contact Us</button>
+          </div>
+          <div class="home"></div>
+          <div class="bottom-bar"></div>
+        </div>
+        
+
+      </div>
+
+
+    </div>
+  </section>
+  <kohan-footer></kohan-footer>
+</div>

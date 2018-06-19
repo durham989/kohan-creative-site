@@ -1,0 +1,143 @@
+<div id="header-unit"></div>
+<kohan-navbar></kohan-navbar>
+
+<section class="full-individual-section">
+
+  <!-- Contact Us Modal -->
+  <ngx-smart-modal #contactUsModal identifier="contactUsModal" customClass="nsm-dialog-animation-btt">
+    <kohan-contact-us></kohan-contact-us>
+  </ngx-smart-modal>
+
+  <div id="video-container">
+    <video #socialVideo autoplay="" loop="true" muted="true" playsinline="true" class="fillWidth" style="object-fit: cover;" src="https://firebasestorage.googleapis.com/v0/b/kohan-creative.appspot.com/o/Drone%20-%209732.mp4?alt=media&token=b70707ca-b1cd-4c3e-bf96-c97e27c12b88">
+      <!-- <source src="https://firebasestorage.googleapis.com/v0/b/kohan-creative.appspot.com/o/Drone%20-%209732.mp4?alt=media&token=b70707ca-b1cd-4c3e-bf96-c97e27c12b88"
+        type="video/mp4" /> -->
+    </video>
+  </div>
+  <!-- end video-container -->
+
+  <!-- Work With Us Modal -->
+  <ngx-smart-modal #myModal identifier="myModal" customClass="nsm-dialog-animation-btt">
+    <kohan-work-with-us></kohan-work-with-us>
+  </ngx-smart-modal>
+
+  <div class="outer">
+    <div class="middle">
+      <div class="inner">
+        <h1 class="kohan-header-tagline text-align-center">Social Media Marketing</h1>
+        <p class="desc-smaller-text text-align-center">Drive Value Through Engagement</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-down-header-arrow-container scroll-down-arrow-center hide-on-mobile">
+    <div class="text-align-center">
+      <div class="scroll-down-animation" (click)="scrollToPageSection('create-cultivate')">
+        <fa name="chevron-down" size="2x" class="scroll-down-animation" (click)="scrollToPageSection('create-cultivate')"></fa>
+      </div>
+    </div>
+  </div>
+
+  <!-- end .header-unit -->
+</section>
+
+<div class="app-background">
+  <div class="container">
+
+
+    <section class="full-individual-section" id="create-cultivate">
+      <div class="row align-items-center align-content-center">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 text-align-center">
+          <img src="../assets/img/periodontics_instagram.png" class="img-fluid" style="max-width: 80%;" [class.slide-in-left]="pageSection == 'create-cultivate'">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 text-align-center" [class.slide-in-right]="pageSection == 'create-cultivate'">
+          <h3 class="service-offerings-title text-align-center">
+            <div class="link-to-services text-align-center">Create & Cultivate</div>
+          </h3>
+          <p class="text-align-center services-paragraph">
+            Whether you're starting completely from scratch or are looking for an added boost, we create, maintain, and grow your most
+            vital social media acounts, allowing you to focus on what you do best.
+          </p>
+          <h3 class="learn-more-title text-align-center">
+            <button type="button" class="sign-up-button" (click)="openContactUsModal()">Learn More</button>
+          </h3>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-align-center pt-5 hide-on-mobile">
+          <div class="scroll-down-animation" (click)="scrollToPageSection('build-community')">
+            <fa name="chevron-down" size="2x" class="scroll-down-animation" (click)="scrollToPageSection('build-community')"></fa>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="full-individual-section" id="build-community">
+      <div class="row align-items-center align-content-center">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 text-align-center" [class.slide-in-elliptic-top-fwd]="pageSection == 'build-community'">
+          <h3 class="service-offerings-title text-align-center">
+            <div class="link-to-services text-align-center">Build a Community</div>
+          </h3>
+          <p class="text-align-center services-paragraph">
+            From creative posts and crisp videos to engaging polls and interactive digital experiences, we don't just help you connect
+            with your patients - we help you build a lasting community.
+          </p>
+          <h3 class="learn-more-title text-align-center">
+            <button type="button" class="sign-up-button" (click)="openContactUsModal()">Get In Touch</button>
+          </h3>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 order-first order-md-2 text-align-center">
+          <img src="../assets/img/Female_Holding_Twitter.png" class="img-fluid" style="max-width: 80%;" [class.slide-in-elliptic-top-fwd]="pageSection == 'build-community'">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-align-center pt-5 order-last hide-on-mobile">
+          <div class="scroll-down-animation" (click)="scrollToPageSection('brand-ambassadors')">
+            <fa name="chevron-down" size="2x" class="scroll-down-animation" (click)="scrollToPageSection('brand-ambassadors')"></fa>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="full-individual-section" id="brand-ambassadors">
+      <div class="row align-items-center align-content-center">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 text-align-center">
+          <img src="../assets/img/All_Smiles_Dental_1.png" class="img-fluid" style="max-width: 50%;" [class.scale-in-center]="pageSection == 'brand-ambassadors'">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 text-align-center" [class.scale-in-center]="pageSection == 'brand-ambassadors'">
+          <h3 class="service-offerings-title text-align-center">
+            <div class="link-to-services text-align-center">Your Brand Ambassadors</div>
+          </h3>
+          <p class="text-align-center services-paragraph">
+            Drawing on the pervasiveness of crowd-sourcing and the "review economy," we employ unique tactics that work towards transforming
+            your patients into your brand ambassadors.
+          </p>
+          <h3 class="learn-more-title text-align-center">
+            <button type="button" class="sign-up-button" (click)="openContactUsModal()">Learn More</button>
+          </h3>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-align-center pt-5 hide-on-mobile">
+          <div class="scroll-down-animation" (click)="scrollToPageSection('header-unit')">
+            <fa name="chevron-up" size="2x" class="scroll-down-animation" (click)="scrollToPageSection('header-unit')"></fa>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <kohan-footer></kohan-footer>
+</div>
+
+<!-- Fixed site navigation -->
+<div class="site-side-nav">
+  <ul>
+    <li class="site-side-nav-item" [style.font-weight]="pageSection == 'header-unit' ? 600 : 400" (click)="scrollToPageSection('header-unit')">
+      <div (click)="scrollToPageSection('header-unit')">TOP</div>
+    </li>
+    <li class="site-side-nav-item" [style.font-weight]="pageSection == 'create-cultivate' ? 600 : 400" (click)="scrollToPageSection('create-cultivate')">
+      <div (click)="scrollToPageSection('create-cultivate')">CULTIVATE</div>
+    </li>
+    <li class="site-side-nav-item" [style.font-weight]="pageSection == 'build-community' ? 600 : 400" (click)="scrollToPageSection('build-community')">
+      <div (click)="scrollToPageSection('build-community')">ENGAGE</div>
+    </li>
+    <li class="site-side-nav-item" [style.font-weight]="pageSection == 'brand-ambassadors' ? 600 : 400" (click)="scrollToPageSection('brand-ambassadors')">
+      <div (click)="scrollToPageSection('brand-ambassadors')">TRANSFORM</div>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,172 @@
+<div id="header-unit"></div>
+<kohan-navbar></kohan-navbar>
+
+<section class="full-individual-section">
+  <!-- <div class="header-unit"> -->
+  <!-- <div class="color-overlay"></div> -->
+  <div id="video-container">
+    <video #aboutVideo autoplay="" loop="true" muted="true" playsinline="true"  class="fillWidth" style="object-fit: cover;" src="https://firebasestorage.googleapis.com/v0/b/kohan-creative.appspot.com/o/City%20-%203249.mp4?alt=media&token=04841c9c-82dd-4ce5-92d4-c74feeeeabcb">
+      <!-- <source src="https://firebasestorage.googleapis.com/v0/b/kohan-creative.appspot.com/o/City%20-%203249.mp4?alt=media&token=04841c9c-82dd-4ce5-92d4-c74feeeeabcb"
+        type="video/mp4" /> -->
+    </video>
+  </div>
+  <!-- end video-container -->
+
+  <!-- <div class="desc-wrapper-container"> -->
+
+  <!-- Work With Us Modal -->
+  <ngx-smart-modal #myModal identifier="myModal" customClass="nsm-dialog-animation-btt">
+    <kohan-work-with-us></kohan-work-with-us>
+  </ngx-smart-modal>
+
+  <div class="outer">
+    <div class="middle">
+      <div class="inner">
+        <!-- <p class="desc-smaller-text text-align-center">Kohan Creative</p> -->
+        <h1 class="kohan-header-tagline text-align-center">Who We Are</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-down-header-arrow-container scroll-down-arrow-center hide-on-mobile">
+    <div class="text-align-center">
+      <div class="scroll-down-animation" (click)="scrollToPageSection('tagline')">
+        <fa name="chevron-down" size="2x" class="scroll-down-animation" (click)="scrollToPageSection('tagline')"></fa>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="desc-wrapper">
+        <p class="desc-smaller-text">Kohan Creative</p>
+        <h1 class="kohan-header-tagline">Who We Are</h1> -->
+  <!-- <a class="kohan-header-button" routerLink="/home">Work With Us</a> -->
+  <!-- <div class="kohan-header-button" (click)="openWorkWithUsModal()">Get Started Now</div> -->
+  <!-- </div> -->
+
+  <!-- <div class="scroll-down-container container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-align-center">
+            <div class="kohan-header-more-link" (click)="scrollToPageSection('who-we-are')">More</div>
+            <div class="scroll-down-animation" (click)="scrollToPageSection('who-we-are')">
+              <fa name="chevron-down" class="scroll-down-animation" style="color: #FFFFFF;"></fa>
+            </div>
+          </div>
+        </div>
+      </div> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- end .header-unit -->
+</section>
+
+<div class="about-us-background">
+  <!-- <particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height"></particles> -->
+  <div class="container">
+    <section id="tagline" class="full-individual-section">
+      <!-- <div class="sphere-scene">
+        <div class="sphere-wrapper">
+          <div class="ball">
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+          </div>
+        </div>
+      </div> -->
+      <div class="row align-items-center align-content-center">
+        <!-- <div class="col-lg-1"></div> -->
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 text-align-center">
+          <img src="../../assets/img/about_text.png" class="img-fluid">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 py-2" [class.slide-in-elliptic-bottom-fwd]="pageSection == 'tagline'">
+          <h2 class="kohan-secondary-statement py-2">
+            Born from the <a class="link-to-services" href="http://kohaninc.com/" target="_blank">KOHAN Group</a>, a leader in healthcare and dental specialty office design, KOHAN Creative is comprised of a group of young programmers, designers, and arists who came together from their prospective fields for the sole purpose of producting trend-forward, enticing, and beautiful websites, marketing material, and full branding assets for the Dental Community.
+          </h2>
+          <h2 class="kohan-secondary-statement py-2">
+            Dedicated to a fresh take on the industry, we provide a comprehensive suite of services, starting the moment you have a grander vision of your Dental Practice. From branding to building your website and digital presence, we offer a unique set of services tailored specifically to the Dental industry.
+          </h2>
+          <div class="button-spacing text-align-center">
+            <button type="button" class="sign-up-button" (click)="openWorkWithUsModal()">Get Started Now</button>
+          </div>
+        </div>
+        <!-- <div class="col-lg-1"></div> -->
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-align-center hide-on-mobile">
+          <div class="scroll-down-animation" (click)="scrollToPageSection('header-unit')">
+            <fa name="chevron-up" size="2x" class="scroll-down-animation" (click)="scrollToPageSection('header-unit')"></fa>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="who-we-are" class="full-individual-section">
+      <div class="row align-items-center align-content-center">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h2 class="kohan-secondary-statement">
+            We provide a comprehensive suite of services, starting the moment you have a grander vision of your dental practice.
+            <br>
+            <br>From architectural and interior design, to construction, to building your website and digital presence, we offer
+            a unique set of services tailored specifically to the dental industry.
+          </h2>
+          <div class="button-spacing text-align-center">
+            <button type="button" class="sign-up-button" (click)="openWorkWithUsModal()">Get Started Now</button>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-align-center hide-on-mobile">
+          <div class="scroll-down-animation" (click)="scrollToPageSection('header-unit')">
+            <fa name="chevron-up" size="2x" class="scroll-down-animation" (click)="scrollToPageSection('header-unit')"></fa>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- <section id="sphere-animation" class="full-individual-section">
+      <div class="sphere-scene">
+        <div class="sphere-wrapper">
+          <div class="ball">
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  </div>
+  <kohan-footer></kohan-footer>
+</div>
+<!-- <particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height"></particles> -->

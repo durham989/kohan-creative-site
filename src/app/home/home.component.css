@@ -1,0 +1,331 @@
+.desc-wrapper-container {
+  min-height: 0;
+  padding: 0px 0px 60px 0px;
+  position: relative;
+  /* overflow: hidden; */
+  width: 100%;
+}
+
+.desc-wrapper {
+  animation: feature-text-anim .75s ease-in-out;
+  /* z-index: 100; */
+  position: relative;
+  width: 100%;
+  /* max-width: 956px; */
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 32px;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+}
+
+.desc-smaller-text {
+  font-weight: 300;
+  font-style: normal;
+  font-size: 28px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  line-height: 1.3em;
+  color: #c3c1c1;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.kohan-header-tagline {
+  display: block;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 58px;
+  letter-spacing: 0px;
+  text-transform: none;
+  line-height: 1.1em;
+  color: #FFFFFF;
+}
+
+.kohan-header-button {
+  background-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  border: 2px solid #FFFFFF !important;
+  color: #FFFFFF;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1em 1.75em;
+  display: inline-block;
+  line-height: 1em;
+  margin: 20px 0;
+  transition: background-color .1s 0s ease-in-out, color .1s 0s ease-in-out;  
+  cursor: pointer;
+}
+
+.kohan-header-button:hover {
+  background-color: #FFFFFF;
+  color: #181818;
+  cursor: pointer;
+}
+
+.kohan-header-more-link {
+  background-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  color: #FFFFFF;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1em 1.75em;
+  display: inline-block;
+  line-height: 1em;
+  transition: background-color .1s 0s ease-in-out, color .1s 0s ease-in-out;  
+  cursor: pointer;
+}
+
+.kohan-section-more-link {
+  background-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  color: rgba(31,31,31,.5);
+  box-sizing: border-box;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 2%;
+  display: inline-block;
+  line-height: 1em;
+  transition: background-color .1s 0s ease-in-out, color .1s 0s ease-in-out;  
+  cursor: pointer;
+  text-align: center;
+}
+
+.spacing-section {
+  margin-top: 8%;
+}
+
+.kohan-secondary-statement {
+  text-align: center;
+  font-weight: 300;
+}
+
+.services-image-margins {
+  margin-bottom: 8%;
+}
+
+.service-offerings-content {
+  cursor: auto;
+  outline: none;
+}
+
+.service-offerings-title {
+  color: #1F1F1F;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  line-height: 1.3em;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.services-paragraph {
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  letter-spacing: .5px;
+  line-height: 1.6em;
+  color: #1F1F1F;
+  margin-top: 1em;
+}
+
+.img-cursor {
+  cursor: pointer;
+}
+
+.img-cursor:hover {
+  -webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition:         all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.work-with-us-modal-button {
+  color: #000000;
+  border: 2px solid #000000;
+  background-color: transparent;
+  -webkit-font-smoothing: subpixel-antialiased;
+  cursor: pointer;
+}
+
+.work-with-us-modal-button:hover {
+  background-color: #000000;
+  color: #EFEFEF;
+  cursor: pointer;
+}
+
+.work-with-us-modal-button-disabled {
+  color: #000000;
+  border: 2px solid #000000;
+  background-color: transparent;
+  -webkit-font-smoothing: subpixel-antialiased;
+  cursor: not-allowed;
+}
+
+.work-with-us-modal-button-disabled:hover {
+  /* background-color: #000000; */
+  /* color: #EFEFEF; */
+  color: #000000;
+  background-color: #CCCCCC;
+  cursor: not-allowed;
+}
+
+.lighter-font-weight {
+  font-weight: 300;
+}
+
+.learn-more-title {
+  color: #1F1F1F;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  line-height: 1.3em;
+  margin-top: 10%;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.sign-up-button {
+  color: #000000;
+  border: 2px solid #000000;
+  background-color: transparent;
+  -webkit-font-smoothing: subpixel-antialiased;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 1em 1.75em;
+}
+
+.sign-up-button:hover {
+  background-color: #000000;
+  color: #EFEFEF;
+  cursor: pointer;
+}
+
+.button-spacing {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.invalid-text {
+  font-weight: 300;
+  color: #dc3545;
+}
+
+@media only screen and (max-width: 640px) {
+  .desc-wrapper-container {
+    min-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .desc-smaller-text {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 1.3em;
+    color: #c3c1c1;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .kohan-header-tagline {
+    display: block;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+    letter-spacing: 0px;
+    text-transform: none;
+    line-height: 1.1em;
+    color: #FFFFFF;
+  }
+
+  .kohan-secondary-statement {
+    font-size: 26px;
+  }
+
+  .button-spacing {
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+
+  .service-offering-container {
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+}
+
+@keyframes feature-text-anim {
+  0% {
+    opacity: 0;
+    position:relative;
+    transform:( translate3d(0,10px,0) );
+  }
+  75% {
+    opacity: 0;
+    transform:( translate3d(0,10px,0) );
+  }
+  100% {
+    opacity:1;
+    transform:( translate3d(0,0,0) );
+  }
+}
+
+@-webkit-keyframes arrow-bounce {
+  0%{
+      transform:translateY(0);
+      -webkit-transform:translateY(0)
+  }
+  50%{
+      transform:translateY(20%);
+      -webkit-transform:translateY(20%)
+  }
+  100%{
+      transform:translateY(0);
+      -webkit-transform:translateY(0)
+  }
+}
+
+@keyframes arrow-bounce {
+  0%{
+      transform:translateY(0);
+      -webkit-transform:translateY(0)
+  }
+  50%{
+      transform:translateY(20%);
+      -webkit-transform:translateY(20%)
+  }
+  100%{
+      transform:translateY(0);
+      -webkit-transform:translateY(0)
+  }
+}

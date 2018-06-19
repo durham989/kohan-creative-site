@@ -1,0 +1,145 @@
+<div id="header-unit"></div>
+<kohan-navbar></kohan-navbar>
+
+<section class="full-individual-section">
+
+  <!-- Contact Us Modal -->
+  <ngx-smart-modal #contactUsModal identifier="contactUsModal" customClass="nsm-dialog-animation-btt">
+    <kohan-contact-us></kohan-contact-us>
+  </ngx-smart-modal>
+
+  <div id="video-container">
+    <video #designVideo autoplay="" loop="true" muted="true" playsinline="true" class="fillWidth" style="object-fit: cover;" src="https://firebasestorage.googleapis.com/v0/b/kohan-creative.appspot.com/o/Metropole%20-%202337.mp4?alt=media&token=3626e458-3e60-42f9-ab22-2572c157686e">
+      <!-- <source src="https://firebasestorage.googleapis.com/v0/b/kohan-creative.appspot.com/o/Metropole%20-%202337.mp4?alt=media&token=3626e458-3e60-42f9-ab22-2572c157686e"
+        type="video/mp4" /> -->
+    </video>
+  </div>
+  <!-- end video-container -->
+
+  <!-- Work With Us Modal -->
+  <ngx-smart-modal #myModal identifier="myModal" customClass="nsm-dialog-animation-btt">
+    <kohan-work-with-us></kohan-work-with-us>
+  </ngx-smart-modal>
+
+  <div class="outer">
+    <div class="middle">
+      <div class="inner">
+        <h1 class="kohan-header-tagline text-align-center">Web Design & Development</h1>
+        <p class="desc-smaller-text text-align-center">Where Our Passions and Expertise Meet</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-down-header-arrow-container scroll-down-arrow-center hide-on-mobile">
+    <div class="text-align-center">
+      <div class="scroll-down-animation" (click)="scrollToPageSection('holistic-design')">
+        <fa name="chevron-down" size="2x" class="scroll-down-animation" (click)="scrollToPageSection('holistic-design')"></fa>
+      </div>
+    </div>
+  </div>
+
+  <!-- end .header-unit -->
+</section>
+
+<div class="app-background">
+  <div class="container">
+
+    <section class="full-individual-section" id="holistic-design">
+      <div class="row align-items-center align-content-center">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 text-align-center">
+          <img src="../assets/img/kohan_laptop_template1.png" class="img-fluid" [class.slide-in-left]="pageSection == 'holistic-design'">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 text-align-center" [class.slide-in-right]="pageSection == 'holistic-design'">
+          <h3 class="service-offerings-title text-align-center">
+            <div class="link-to-services text-align-center">Holistic Design & Development</div>
+          </h3>
+          <p class="text-align-center services-paragraph">
+            Similar to how you provide your patients with thorough, holistic dental care in a luxurious, comfortable environment, we
+            design and develop your website with the same intent - embedding your digital property and presence with the
+            same harmonious feel as your physical one.
+          </p>
+          <h3 class="learn-more-title text-align-center">
+            <button type="button" class="sign-up-button" (click)="openContactUsModal()">Learn More</button>
+          </h3>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-align-center pt-5 hide-on-mobile">
+          <div class="scroll-down-animation" (click)="scrollToPageSection('optimization')">
+            <fa name="chevron-down" size="2x" class="scroll-down-animation" (click)="scrollToPageSection('optimization')"></fa>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="full-individual-section" id="optimization">
+      <div class="row align-items-center align-content-center">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 text-align-center" [class.slide-in-elliptic-top-fwd]="pageSection == 'optimization'">
+          <h3 class="service-offerings-title text-align-center">
+            <div class="link-to-services text-align-center">Built for Maximum Optimization</div>
+          </h3>
+          <p class="text-align-center services-paragraph">
+            We employ cutting-edge web development practices and frameworks, optimized for search engines and across all mobile devices,
+            to ensure the highest perceived performance and speed with an enhanced user experience to match.
+          </p>
+          <h3 class="learn-more-title text-align-center">
+            <button type="button" class="sign-up-button" (click)="openContactUsModal()">Get In Touch</button>
+          </h3>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 order-first order-md-2 text-align-center">
+          <img src="../assets/img/Endodontic_Desktop.png" class="img-fluid" [class.slide-in-elliptic-top-fwd]="pageSection == 'optimization'">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-align-center pt-5 order-last hide-on-mobile">
+          <div class="scroll-down-animation" (click)="scrollToPageSection('digital-office')">
+            <fa name="chevron-down" size="2x" class="scroll-down-animation" (click)="scrollToPageSection('digital-office')"></fa>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="full-individual-section" id="digital-office">
+      <div class="row align-items-center align-content-center">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 text-align-center">
+          <img src="../assets/img/iphone_example.png" class="img-fluid" [class.scale-in-center]="pageSection == 'digital-office'">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 text-align-center" [class.scale-in-center]="pageSection == 'digital-office'">
+          <h3 class="service-offerings-title text-align-center">
+            <div class="link-to-services text-align-center">Your Digital Dental Office</div>
+          </h3>
+          <p class="text-align-center services-paragraph">
+            Your website is the digital extension of your physical dental office. Therefore, we build your site with a focus on purpose,
+            employing proprietary and third-party technologies that allow you to connect with your patients, process payments,
+            schedule appointments, and more.
+          </p>
+          <h3 class="learn-more-title text-align-center">
+            <button type="button" class="sign-up-button" (click)="openContactUsModal()">Learn More</button>
+          </h3>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-align-center pt-5 hide-on-mobile">
+          <div class="scroll-down-animation" (click)="scrollToPageSection('header-unit')">
+            <fa name="chevron-up" size="2x" class="scroll-down-animation" (click)="scrollToPageSection('header-unit')"></fa>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <kohan-footer></kohan-footer>
+</div>
+
+<!-- Fixed site navigation -->
+<div class="site-side-nav">
+  <ul>
+    <li class="site-side-nav-item" [style.font-weight]="pageSection == 'header-unit' ? 600 : 400" (click)="scrollToPageSection('header-unit')">
+      <div (click)="scrollToPageSection('header-unit')">TOP</div>
+    </li>
+    <li class="site-side-nav-item" [style.font-weight]="pageSection == 'holistic-design' ? 600 : 400" (click)="scrollToPageSection('holistic-design')">
+      <div (click)="scrollToPageSection('holistic-design')">HOLISTIC</div>
+    </li>
+    <li class="site-side-nav-item" [style.font-weight]="pageSection == 'optimization' ? 600 : 400" (click)="scrollToPageSection('optimization')">
+      <div (click)="scrollToPageSection('optimization')">OPTIMIZE</div>
+    </li>
+    <li class="site-side-nav-item" [style.font-weight]="pageSection == 'digital-office' ? 600 : 400" (click)="scrollToPageSection('digital-office')">
+      <div (click)="scrollToPageSection('digital-office')">EXTEND</div>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,159 @@
+<div id="header-unit"></div>
+<kohan-navbar></kohan-navbar>
+
+<section class="full-individual-section">
+  <div id="video-container">
+    <video #homeVideo autoplay="" loop="true" muted="true" playsinline="true" class="fillWidth" style="object-fit: cover;" src="https://firebasestorage.googleapis.com/v0/b/kohan-creative.appspot.com/o/Berlin%20-%2015183.mp4?alt=media&token=1de64bf7-8619-4fc9-b5d8-8eba02a073df">
+      <!-- <source src="https://firebasestorage.googleapis.com/v0/b/kohan-creative.appspot.com/o/Berlin%20-%2015183.mp4?alt=media&token=1de64bf7-8619-4fc9-b5d8-8eba02a073df"
+        type="video/mp4" /> -->
+    </video>
+  </div>
+  <!-- end video-container -->
+
+
+  <!-- Work With Us Modal -->
+  <ngx-smart-modal #myModal identifier="myModal" customClass="nsm-dialog-animation-btt">
+    <kohan-work-with-us></kohan-work-with-us>
+  </ngx-smart-modal>
+
+  <div class="outer">
+    <div class="middle">
+      <div class="inner">
+        <!-- <p class="desc-smaller-text text-align-center">Kohan Creative</p> -->
+        <h1 class="kohan-header-tagline text-align-center">Creative Web Design for
+          <br>Your Dental & Medical Practice</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-down-header-arrow-container scroll-down-arrow-center hide-on-mobile">
+    <div class="text-align-center">
+      <div class="scroll-down-animation" (click)="scrollToPageSection('web-design-development')">
+        <fa name="chevron-down" size="2x" class="scroll-down-animation" (click)="scrollToPageSection('web-design-development')"></fa>
+      </div>
+    </div>
+  </div>
+  
+  <!-- end .header-unit -->
+</section>
+
+
+<div class="app-background">
+
+  <div class="container">
+
+    <!-- <section id="web-design-development" (mouseenter)="fireAnimation(true)" (mouseleave)="fireAnimation(false)" class="full-individual-section"> -->
+    <section id="web-design-development" class="full-individual-section">
+      <div class="row align-items-center align-content-center">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 text-align-center">
+          <img src="../assets/img/design_graphic.png" class="img-fluid img-cursor" (click)="navigateToPage('web-design-development')" [class.slide-in-left]="pageSection == 'web-design-development'">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 text-align-center" [class.slide-in-right]="pageSection == 'web-design-development'">
+          <h3 class="service-offerings-title text-align-center">
+            <a routerLink="/web-design-development" class="link-to-services text-align-center">Website Design & Development</a>
+          </h3>
+          <p class="text-align-center services-paragraph">
+            We design and develop custom websites that mirror the aesthetic and warmth of your dental or medical practice, evoking a
+            consistent emotion across your physical and digital properties.
+          </p>
+          <h3 class="learn-more-title text-align-center">
+            <a routerLink="/web-design-development" class="link-to-services text-align-center">Learn More</a>
+            <!-- <button type="button" class="sign-up-button" (click)="navigateToPage('web-design-development')">Learn More</button> -->
+          </h3>
+        </div>
+        <div class="col-lg-12 text-align-center hide-on-mobile">
+          <div class="scroll-down-animation" (click)="scrollToPageSection('graphic-design-branding')">
+            <fa name="chevron-down" size="2x" class="scroll-down-animation" (click)="scrollToPageSection('graphic-design-branding')"></fa>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="graphic-design-branding" class="full-individual-section">
+      <div class="row align-items-center align-content-center">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 text-align-center">
+          <img src="../assets/img/branding_graphic.png" class="img-fluid img-cursor" (click)="navigateToPage('graphic-design-branding')" [class.slide-in-elliptic-top-fwd]="pageSection == 'graphic-design-branding'">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 text-align-center" [class.slide-in-elliptic-top-fwd]="pageSection == 'graphic-design-branding'">
+          <h3 class="service-offerings-title text-align-center">
+            <a routerLink="/graphic-design-branding" class="link-to-services text-align-center">Graphic Design & Branding</a>
+          </h3>
+          <p class="text-align-center services-paragraph">
+            Whether you're starting your own practice or looking to modernize your current one, we specialize in creating custom logos
+            and brand assets that build on your story and set you apart.
+          </p>
+          <h3 class="learn-more-title text-align-center">
+            <!-- <button type="button" class="sign-up-button" (click)="navigateToPage('graphic-design-branding')">Learn More</button> -->
+            <a routerLink="/graphic-design-branding" class="link-to-services text-align-center">Learn More</a>
+          </h3>
+        </div>
+        <div class="col-lg-12 text-align-center hide-on-mobile">
+          <div class="scroll-down-animation" (click)="scrollToPageSection('social-media-marketing')">
+            <fa name="chevron-down" size="2x" class="scroll-down-animation" (click)="scrollToPageSection('social-media-marketing')"></fa>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="social-media-marketing" class="full-individual-section">
+      <div class="row align-items-center align-content-center">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 text-align-center">
+          <img src="../assets/img/social_graphic.png" class="img-fluid img-cursor" (click)="navigateToPage('social-media-marketing')" [class.scale-in-center]="pageSection == 'social-media-marketing'">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 text-align-center" [class.scale-in-center]="pageSection == 'social-media-marketing'">
+          <h3 class="service-offerings-title text-align-center">
+            <a routerLink="/social-media-marketing" class="link-to-services text-align-center">Social Media Marketing</a>
+          </h3>
+          <p class="text-align-center services-paragraph">
+            Extend your brand presence outside the office, at all hours of the day. We engage your patients and anticipate their needs
+            by managing your social accounts with thoughtfulness, attention, and compassion.
+          </p>
+          <h3 class="learn-more-title text-align-center">
+            <!-- <button type="button" class="sign-up-button" (click)="navigateToPage('social-media-marketing')">Learn More</button> -->
+            <a routerLink="/social-media-marketing" class="link-to-services text-align-center">Learn More</a>
+          </h3>
+        </div>
+        <div class="col-lg-12 text-align-center hide-on-mobile">
+          <div class="scroll-down-animation" (click)="scrollToPageSection('header-unit')">
+            <fa name="chevron-up" size="2x" class="scroll-down-animation" (click)="scrollToPageSection('header-unit')"></fa>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <div class="mockup_wrap">
+          <div class="md-macbook-pro">
+            <div class="md-lid">
+              <div class="md-camera"></div>
+      
+              <div class="md-screen">
+              </div>
+      
+            </div>
+            <div class="md-base"></div>
+          </div>
+        </div> -->
+
+  </div>
+
+  <kohan-footer></kohan-footer>
+
+</div>
+
+<!-- Fixed site navigation -->
+<div class="site-side-nav">
+  <ul>
+    <li class="site-side-nav-item" [style.font-weight]="pageSection == 'header-unit' ? 600 : 400" (click)="scrollToPageSection('header-unit')">
+      <div (click)="scrollToPageSection('header-unit')">TOP</div>
+    </li>
+    <li class="site-side-nav-item" [style.font-weight]="pageSection == 'web-design-development' ? 600 : 400" (click)="scrollToPageSection('web-design-development')">
+      <div (click)="scrollToPageSection('web-design-development')">DESIGN</div>
+    </li>
+    <li class="site-side-nav-item" [style.font-weight]="pageSection == 'graphic-design-branding' ? 600 : 400" (click)="scrollToPageSection('graphic-design-branding')">
+      <div (click)="scrollToPageSection('graphic-design-branding')">BRANDING</div>
+    </li>
+    <li class="site-side-nav-item" [style.font-weight]="pageSection == 'social-media-marketing' ? 600 : 400" (click)="scrollToPageSection('social-media-marketing')">
+      <div (click)="scrollToPageSection('social-media-marketing')">SOCIAL</div>
+    </li>
+  </ul>
+</div>
